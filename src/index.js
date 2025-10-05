@@ -1,11 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Counter from "./Counter";
+import ReactDOM from "react-dom";
+import Counter from "./components/Counter";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Counter />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
